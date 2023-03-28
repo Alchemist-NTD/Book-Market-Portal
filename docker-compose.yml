@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  database:
+    image: postgres:15.2-alpine3.17
+    container_name: book_market_db
+    volumes:
+      - ./Data/db/:/var/lib/postgresql/data
+      - ./Data/initial/:/home/
+    restart: always
+    environment:
+      - POSTGRES_DB=book_db
+      - POSTGRES_USER=postgres_admin_duy
+      - POSTGRES_PASSWORD=postgres_admin_duy
+    ports:
+      - "5432:5432"
+
+  backend:
+    container_name: book_market_backend
+    build: ./Backend
+    command: sh -c "service cron start && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./Backend:/src
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_NAME=book_market_db
+      - POSTGRES_USER=postgres_admin_duy
+      - POSTGRES_PASSWORD=postgres_admin_duy
+    tty: true
+    depends_on:
+      - database
+    restart: always
+
+  frontend:
+    container_name: book_market_webapp
+    build: ./Frontend
+    command: sh -c "cd book_market_fe && npm start"
+    volumes:
+      - ./Frontend:/app
+      - /app/book_market_fe/node_modules
+    ports:
+      - 3000:3000
+    restart: always
