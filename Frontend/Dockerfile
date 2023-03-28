@@ -5,6 +5,16 @@ WORKDIR /app
 
 COPY . .
 
-RUN cd book_market_fe && npm install
+WORKDIR /app/book_market_fe
+
+RUN npm install
+
+RUN npx tailwindcss init
+
+COPY . .
+
+RUN npm run build
 
 EXPOSE 3000
+
+CMD [ "npm", "start" ]
