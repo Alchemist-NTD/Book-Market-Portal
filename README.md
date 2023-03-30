@@ -19,3 +19,14 @@ note that above command only works while running in container based on node imag
 sudo chwon $USER:$USER -R .
 
 ```
+- Initial the Tailwindcss inside frontend service container
+```
+docker compose build
+
+docker compose up
+
+docker compose exec <service-frontend> sh
+
+npx tailwindcss init
+
+```

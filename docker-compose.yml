@@ -35,7 +35,6 @@ services:
   frontend:
     container_name: book_market_webapp
     build: ./Frontend
-    # command: sh -c "cd book_market_fe && npm start"
     volumes:
       - ./Frontend:/app
       - /app/book_market_fe/node_modules
