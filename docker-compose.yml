@@ -18,7 +18,8 @@ services:
   backend:
     container_name: book_market_backend
     build: ./Backend
-    command: sh -c "service cron start && python manage.py runserver 0.0.0.0:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    # sh -c "service cron start && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./Backend:/src
     ports:
@@ -37,8 +38,9 @@ services:
     build: ./Frontend
     # command: sh -c "cd book_market_fe && npm start"
     volumes:
-      - ./Frontend:/app
-      - /app/book_market_fe/node_modules
+      - ./Frontend/book_market_fe:/app
+      # - /app/node_modules
     ports:
       - 3000:3000
+    tty: true
     restart: always
