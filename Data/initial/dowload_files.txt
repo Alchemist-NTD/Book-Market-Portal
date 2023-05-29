@@ -1,0 +1,6 @@
+downloads file from bellow google drive link and place it from folder contained this file.
+
+books.sql: https://drive.google.com/file/d/1H2Vs9EWzocZkB9qYbk61RWDF3hfJOVJe/view?usp=share_link
+ratings.sql: https://drive.google.com/file/d/1-wPT_iJuPOb-f0nHOelFp6jTPPZ33YkW/view?usp=share_link
+sim.sql: https://drive.google.com/file/d/1xrTtsOHYKRn9Syvq7jjcfHAy6oLbvcMr/view?usp=share_link
+users.sql: https://drive.google.com/file/d/14k4lqT49svl4kgBOMvJVOY-Sdi1mbKpB/view?usp=share_link

@@ -146,5 +146,5 @@ Data/db
 .env.development.local
 .env.test.local
 .env.production.local
-models
-Data/initial
+Backend/books_recommender/models/CF.pkl
+Data/initial/*.sql
