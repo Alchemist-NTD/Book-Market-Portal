@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.cell {
+    @apply py-2 px-4 border;
+}
+
+.del-cart-btn {
+    @apply p-1 border border-white rounded-lg hover:bg-red-700 hover:border-black;
+}
+
+.chosen-sec {
+    @apply inline-flex hover:underline text-2xl text-black bg-gray-500 font-bold text-center border-2 w-2/12 rounded-t;
+}
+
+.unchosen-sec {
+    @apply inline-flex hover:underline text-2xl font-bold text-center border border-gray-100 w-2/12 rounded-t;
+}

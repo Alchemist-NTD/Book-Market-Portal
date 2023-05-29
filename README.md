@@ -19,3 +19,25 @@ note that above command only works while running in container based on node imag
 sudo chwon $USER:$USER -R .
 
 ```
+
+# Insert Database
+```
+psql -U postgres_admin_duy -d book_db -f /home/books.sql
+
+psql -U postgres_admin_duy -d book_db -f /home/users.sql
+
+psql -U postgres_admin_duy -d book_db -f /home/ratings.sql
+
+psql -U postgres_admin_duy -d book_db -f /home/sim.sql
+```
+
+# TEST BANK CARD
+NH: NCB
+
+ST: 9704198526191432198
+
+TCT: NGUYEN VAN A
+
+NPH: 07/15
+
+OTP: 123456

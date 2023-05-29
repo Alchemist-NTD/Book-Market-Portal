@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.common-login {
+    @apply overflow-visible flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0;
+    overflow: auto;
+}
+
+.home-nav-register {
+    @apply flex mt-3 hover:underline items-center mb-6 text-2xl font-semibold text-white;
+    /* height: 20vw; */
+}
+
+.home-nav-login {
+    @apply flex hover:underline items-center mb-6 text-2xl font-semibold text-white;
+}
+
+.login-rec {
+    @apply w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0;
+}
+
+.register-rec {
+    @apply w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0;
+}
+
+.header-sign-to-account {
+    @apply text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl;
+}
+
+.label-username {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.input-username {
+    @apply h-8 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5;
+}
+
+.input-password {
+    @apply h-8 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5;
+}
+
+.login-btn {
+    @apply w-full hover:underline text-black font-medium rounded-lg text-sm px-5 py-1 text-center;
+}
+
+.error-message {
+    @apply font-light text-red-700 text-left text-sm
+}
+
+.result-message {
+    @apply font-normal text-left text-sm
+}

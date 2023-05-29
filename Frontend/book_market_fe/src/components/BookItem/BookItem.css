@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.img-container {
+    @apply flex border border-black justify-center bg-white items-center h-[180px];
+}
+
+.img-item {
+    @apply block border-2 border-black;
+}
+
+.img-backup {
+    @apply w-4/6 h-auto
+}
+
+.title-container {
+    @apply flex justify-center items-center text-center w-56 md:w-fit;
+}

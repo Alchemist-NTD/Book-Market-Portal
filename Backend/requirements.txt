@@ -10,3 +10,4 @@ Pillow
 numpy
 scikit-surprise
 scikit-learn
+pandas

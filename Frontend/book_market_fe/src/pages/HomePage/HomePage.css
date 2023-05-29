@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.book-container-title {
+    @apply flex my-16 mx-4 justify-start text-2xl font-normal uppercase;
+}

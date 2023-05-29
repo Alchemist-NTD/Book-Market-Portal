@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.tab-bar {
+    @apply fixed top-0 left-0 h-full transform transition-transform duration-300;
+}
+
+.bar {
+    @apply rounded-lg flex-col hover:border-black border left-0 p-2.5 w-full h-10 bg-blue-500 text-white hover:underline hover:text-black
+}

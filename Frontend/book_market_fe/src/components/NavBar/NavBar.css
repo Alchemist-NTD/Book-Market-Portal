@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.nav-el-container {
+    @apply grid md:grid-cols-4 justify-center items-center text-center text-xl;
+}
+
+.nav-el {
+    @apply rounded-lg hover:bg-gray-100 hover:text-gray-900 hover:underline md:col-span-1 cursor-pointer py-1;
+}
+
+.big-title {
+    @apply hover:underline py-2 uppercase text-5xl justify-center text-center;
+}
+
+.nav-login-logout {
+    @apply px-2 border border-gray-300 rounded-lg mr-2 uppercase hover:bg-gray-100 hover:text-gray-900;
+}
+
+
+

@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.btn-pages-move {
+    @apply rounded-lg hover:border-black hover:bg-gray-100 hover:text-gray-900 mx-2 mt-2 h-3/5 border;
+    width: 5%;
+}

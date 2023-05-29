@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.search-input {
+    @apply ml-1.5 text-black font-normal px-4 rounded-lg rounded-l-none border border-black;
+}
+
+.button-submit {
+    @apply cursor-pointer hover:bg-gray-100 hover:text-gray-900 text-white rounded-lg px-4 py-0.5 border-2;
+}

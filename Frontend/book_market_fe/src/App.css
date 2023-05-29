@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  background-image: url('./images/page_bg.jpg');
+  background-size: cover;
+  /* background-repeat: repeat-y; */
+  background-attachment: fixed;
+  overflow: auto;
+  @apply h-screen;
+  min-height: 100vh;
 }
